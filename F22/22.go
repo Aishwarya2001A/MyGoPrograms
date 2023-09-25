@@ -2,12 +2,22 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
+	"log"
+	"os"
 )
 
-import "C"
-
 func main() {
-	fmt.Println(F21.Add(3, 5))
-	fmt.Println(F21.Sub(5, 3))
-
+	file, err := os.Create("file.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	file.WriteString("Hi this is Aishwarya")
+	file.Close()
+	stream, err := ioutil.ReadFile("file.txt")
+	if err != nil {
+		log.Fatal(err)
+	}
+	readString := string(stream)
+	fmt.Println(readString)
 }
