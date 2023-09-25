@@ -2,7 +2,6 @@ package main
 
 import "fmt"
 
-
 func main() {
 
 	fmt.Print("Enter text: ")
@@ -23,5 +22,5 @@ func main() {
 	} else if input >= 90 && input <= 100 {
 		fmt.Print(" A+ Grade")
 	}
-	fmt.Println("bye")
+	fmt.Println("byee")
 }
