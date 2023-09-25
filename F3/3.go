@@ -15,5 +15,5 @@ func main() {
 		/* if condition is false then print the following */
 		fmt.Printf(" is odd\n")
 	}
-	fmt.Println("byeee")
+	fmt.Println("byeeee")
 }
