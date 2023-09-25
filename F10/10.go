@@ -22,4 +22,6 @@ func main() {
 	fmt.Println(gettingArgs)
 
 	fmt.Println(toGetAllArgs)
+
+	fmt.Println("Byee")
 }
