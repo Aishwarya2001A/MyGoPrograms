@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
+
 func main() {
+
 	fmt.Print("Enter text: ")
 	var input int
 	fmt.Scanln(&input)
