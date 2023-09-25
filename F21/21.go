@@ -32,4 +32,5 @@ func main() {
 	fmt.Printf("%#U\n", unicode.To(unicode.UpperCase, r))
 	fmt.Printf("%#U\n", unicode.To(unicode.LowerCase, r))
 	fmt.Printf("%#U\n", unicode.To(unicode.TitleCase, r))
+	fmt.Println("bye")
 }
