@@ -7,8 +7,8 @@ import (
 
 func main() {
 
-	slice_1 := []byte{'G', 'E', 'E', 'K', 'S'}
-	slice_2 := []byte{'G', 'E', 'e', 'K', 'S'}
+	slice_1 := []byte{'A', 'i', 's', 'h', 'U'}
+	slice_2 := []byte{'a', 'i', 'H', 'H', 'u'}
 
 	res := bytes.Compare(slice_1, slice_2)
 	if res == 0 {
