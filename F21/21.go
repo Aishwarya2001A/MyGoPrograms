@@ -1,13 +1,39 @@
-package F21
+package main
 
-func Add(n1, n2 int) int {
+import (
+	"fmt"
+	"unicode"
+)
 
-	return n1 + n2
+func main() {
+	fmt.Println("unicode.In('x', unicode.Latin):",
+		unicode.In('x', unicode.Latin))
 
-}
+	fmt.Println("unicode.In('F', unicode.ASCII_Hex_Digit):",
+		unicode.In('F', unicode.ASCII_Hex_Digit))
 
-func Subtract(n1, n2 int) int {
+	fmt.Println("unicode.In('\\t', unicode.White_Space):",
+		unicode.In('\t', unicode.White_Space))
 
-	return n1 - n2
+	fmt.Println("unicode.In('\\a', unicode.White_Space):",
+		unicode.In('\a', unicode.White_Space))
 
+	var r rune
+
+	r = 'Q'
+	fmt.Printf("%#U\n", unicode.To(unicode.UpperCase, r))
+	fmt.Printf("%#U\n", unicode.To(unicode.LowerCase, r))
+	fmt.Printf("%#U\n", unicode.To(unicode.TitleCase, r))
+	fmt.Println()
+
+	r = 'q'
+	fmt.Printf("%#U\n", unicode.To(unicode.UpperCase, r))
+	fmt.Printf("%#U\n", unicode.To(unicode.LowerCase, r))
+	fmt.Printf("%#U\n", unicode.To(unicode.TitleCase, r))
+	fmt.Println()
+
+	r = 'Ä'
+	fmt.Printf("%#U\n", unicode.To(unicode.UpperCase, r))
+	fmt.Printf("%#U\n", unicode.To(unicode.LowerCase, r))
+	fmt.Printf("%#U\n", unicode.To(unicode.TitleCase, r))
 }
