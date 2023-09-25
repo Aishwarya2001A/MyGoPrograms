@@ -1,7 +1,6 @@
 package main
 
 import (
-	"F21"
 	"fmt"
 )
 
