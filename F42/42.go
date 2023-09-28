@@ -35,4 +35,6 @@ func main() {
 
 	fmt.Println("The number of goroutines after wait = ", runtime.NumGoroutine())
 
+	fmt.Println("Bye")
+
 }
