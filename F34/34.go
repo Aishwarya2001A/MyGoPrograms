@@ -25,15 +25,14 @@ func (m myvalue) Volume() float64 {
 
 func myfun(a interface{}) {
 
-	// Using type switch
-	switch a.(type) {
+	switch b := a.(type) {
 
 	case int:
-		fmt.Println("Type: int, Value:", a.(int))
+		fmt.Println("Type: int, Value:", b)
 	case string:
-		fmt.Println("\nType: string, Value: ", a.(string))
+		fmt.Println("\nType: string, Value: ", b)
 	case float64:
-		fmt.Println("\nType: float64, Value: ", a.(float64))
+		fmt.Println("\nType: float64, Value: ", b)
 	default:
 		fmt.Println("\nType not found")
 	}
