@@ -19,7 +19,7 @@ func main() {
 	ctx1 := context.WithValue(context.Background(), key1, "aish")
 	Context1(ctx1, key1)
 
-	//    Determining If a Context is Done
+	// Determining If a Context is Done
 	ctx2, cancel := context.WithCancel(context.Background())
 	go func() {
 		time.Sleep(5 * interval * time.Millisecond)
