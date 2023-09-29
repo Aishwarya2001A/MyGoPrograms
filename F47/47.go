@@ -17,7 +17,7 @@ func setupRouter() *gin.Engine {
 
 func main() {
 	r := setupRouter()
-	r.Run(":8088")
+	r.Run(":8087")
 }
 
-//  http://0.0.0.0:8088/progress
+//  http://0.0.0.0:8087/progress
