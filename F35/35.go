@@ -26,7 +26,7 @@ func main() {
 
 	fmt.Println("Branch Name(Before): ", res.branch)
 
-	res.show_1("ECE")
+	res.show_1("EC")
 	fmt.Println("Branch Name(After): ", res.branch)
 
 	(&res).show_2()
