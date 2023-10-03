@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -59,4 +60,5 @@ func deleteBookHandler(c *gin.Context) {
 	}
 
 	c.Status(http.StatusNoContent)
+	fmt.Println("Byee")
 }
