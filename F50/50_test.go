@@ -26,5 +26,6 @@ func TestDifference(t *testing.T) {
 				t.Logf(test.name, " PASS: actual %d equal to expected %d", actual, test.expected)
 			}
 		})
+
 	}
 }
