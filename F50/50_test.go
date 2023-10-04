@@ -1,6 +1,8 @@
 package mathops
 
-import "testing"
+import (
+	"testing"
+)
 
 type diffTest struct {
 	name                 string
@@ -8,8 +10,8 @@ type diffTest struct {
 }
 
 var diffTests = []diffTest{
-	{"1st Test: values 10,3 ", 9, 4, 5},
-	{"2nd Test: values 4,8 ", 4, 1, 30},
+	{"1st Test: values 10,3 ", 9, 4, 50},
+	{"2nd Test: values 4,8 ", 4, 1, 3},
 	{"3rd Test: values 6,9 ", 6, 1, 5},
 	{"4th Test: values 10,13 ", 10, 1, 90},
 }
@@ -25,6 +27,7 @@ func TestDifference(t *testing.T) {
 			} else {
 				t.Logf(test.name, " PASS: actual %d equal to expected %d", actual, test.expected)
 			}
+
 		})
 
 	}
