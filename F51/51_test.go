@@ -44,15 +44,13 @@ func TestFooerTableDriven(t *testing.T) {
 		input int
 		want  string
 	}{
-		{"1 should be Foo", 1, "Foo"},
-		{"2 should be Foo", 2, "Foo"},
+		{"1 should be Foo", 1, "1"},
+		{"2 should be Foo", 2, "2"},
 		{"3 should be Foo", 3, "Foo"},
-		{"4 should be Foo", 4, "Foo"},
-		{"5 should be Foo", 5, "Foo"},
+		{"4 should be Foo", 4, "4"},
+		{"5 should be Foo", 5, "5"},
 		{"6 should be Foo", 6, "Foo"},
-		{"9 should be Foo", 7, "Foo"},
-		{"3 should be Foo", 3, "Foo"},
-		{"1 is not Foo", 0, "1"},
+		{"9 should be Foo", 9, "Foo"},
 		{"0 should be Foo", 0, "Foo"},
 	}
 
