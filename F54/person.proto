@@ -7,3 +7,11 @@ message Person {
       string name = 1;
       int32 age = 2;
 }
+
+//aaishwar@X0X0L0MK20 F55 % export PATH=$PATH:$GOPATH/bin                                                  
+
+//aaishwar@X0X0L0MK20 F55 % protoc --go_out=. *.proto    
+
+//aaishwar@X0X0L0MK20 F55 % protoc -I=. --go_out=. greet.proto
+
+//protoc -I=. --go-grpc_out=. greet.proto
