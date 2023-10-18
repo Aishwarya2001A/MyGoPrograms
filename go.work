@@ -1,3 +1,20 @@
-go 1.19
+go 1.21.3
 
-use .
+use (
+	.
+	./F55
+	./F55/cmd/protoc-gen-go-grpc
+	./F55/examples
+	./F55/examples/features/observability
+	./F55/gcp/observability
+	./F55/interop/observability
+	./F55/security/advancedtls
+	./F55/security/advancedtls/examples
+	./F55/security/authorization
+	./F55/stats/opencensus
+	./F55/test/tools
+	./go-interceptors-demo
+	./go-interceptors-demo/go-interceptors-demo
+	./grpc-gateway
+	./grpc-gateway/grpc-gateway
+)
