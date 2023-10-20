@@ -92,6 +92,8 @@ func main() {
 
 	fmt.Println("Comp7S20211122 Refresh Interval:", data.Comp7S20211122.Settings.Index.RefreshInterval)
 
+	fmt.Println("Comp7S20211122 Creation date:", data.Comp7S20211122.Settings.Index.CreationDate)
+
 	fmt.Println("Comp7S20211123 ProvidedName:", data.Comp7S20211123.Settings.Index.ProvidedName)
 
 	fmt.Println("Comp7S20211123 Analyzer Tokenizer:", data.Comp7S20211123.Settings.Index.Analysis.Tokenizer.AutocompleteVersionNumberTokenizer.MaxGram)
