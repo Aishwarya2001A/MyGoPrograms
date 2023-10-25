@@ -3,8 +3,10 @@ package main
 import (
 	"encoding/json"
 	"os"
-	"reflect"
+
 	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestReadJSONFile(t *testing.T) {
@@ -30,7 +32,8 @@ func TestReadJSONFile(t *testing.T) {
 		t.Fatalf("Error decoding expected data JSON: %v", err)
 	}
 
-	if !reflect.DeepEqual(data, expectedData) {
-		t.Errorf("Expected %+v, got %+v", expectedData, data)
-	}
+	assert.Equal(t, expectedData, data)
+
+	//assert.NotEqual(t, expectedData, data)
+
 }
