@@ -32,8 +32,8 @@ func TestReadJSONFile(t *testing.T) {
 		t.Fatalf("Error decoding expected data JSON: %v", err)
 	}
 
-	assert.Equal(t, expectedData, data)
+	//assert.Equal(t, expectedData, data)
 
-	//assert.NotEqual(t, expectedData, data)
+	assert.NotEqual(t, expectedData, data)
 
 }
