@@ -96,11 +96,11 @@ func main() {
 
 	fmt.Println("Comp7S20211123 Analyzer Tokenizer:", data.Comp7S20211123.Settings.Index.Analysis.Tokenizer)
 	fmt.Println("Comp7S20211123 UUID:", data.Comp7S20211123.Settings.Index.UUID)
-
 	fmt.Println("Comp7S20211122 Analyzer auto complete version filter:", data.Comp7S20211122.Settings.Index.Analysis.Analyzer)
-
 	fmt.Println("Normalizer Type:", data.Comp7S20211122.Settings.Index.Analysis.Normalizer.CaseInsensitive.Type)
 	fmt.Println("Analyzer Tokenizer Type:", data.Comp7S20211122.Settings.Index.Analysis.Normalizer.CaseInsensitive.Type)
+
+	fmt.Println("------------------------------------------------------------------------")
 
 	fmt.Println("Comp7S20211122 Refresh Interval:", data.Comp7S20211122.Settings.Index.RefreshInterval)
 	fmt.Println("Comp7S20211122 Number of Shards:", data.Comp7S20211122.Settings.Index.NumberOfShards)
