@@ -102,4 +102,16 @@ func main() {
 	fmt.Println("Normalizer Type:", data.Comp7S20211122.Settings.Index.Analysis.Normalizer.CaseInsensitive.Type)
 	fmt.Println("Analyzer Tokenizer Type:", data.Comp7S20211122.Settings.Index.Analysis.Normalizer.CaseInsensitive.Type)
 
+	fmt.Println("Comp7S20211122 Refresh Interval:", data.Comp7S20211122.Settings.Index.RefreshInterval)
+	fmt.Println("Comp7S20211122 Number of Shards:", data.Comp7S20211122.Settings.Index.NumberOfShards)
+	fmt.Println("Comp7S20211122 ProvidedName:", data.Comp7S20211122.Settings.Index.ProvidedName)
+	fmt.Println("Comp7S20211122 CreationDate:", data.Comp7S20211122.Settings.Index.CreationDate)
+
+	fmt.Println("------------------------------------------------------------------------")
+
+	fmt.Println("Comp7S20211123 Refresh Interval:", data.Comp7S20211123.Settings.Index.RefreshInterval)
+	fmt.Println("Comp7S20211123 Number of Shards:", data.Comp7S20211123.Settings.Index.NumberOfShards)
+	fmt.Println("Comp7S20211123 ProvidedName:", data.Comp7S20211123.Settings.Index.ProvidedName)
+	fmt.Println("Comp7S20211123 CreationDate:", data.Comp7S20211123.Settings.Index.CreationDate)
+
 }
