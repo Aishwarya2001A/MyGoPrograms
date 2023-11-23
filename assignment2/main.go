@@ -112,6 +112,8 @@ func main() {
 	fmt.Println("Comp7S20211123 Refresh Interval:", data.Comp7S20211123.Settings.Index.RefreshInterval)
 	fmt.Println("Comp7S20211123 Number of Shards:", data.Comp7S20211123.Settings.Index.NumberOfShards)
 	fmt.Println("Comp7S20211123 ProvidedName:", data.Comp7S20211123.Settings.Index.ProvidedName)
+
+	fmt.Println("Comp7S20211123 CreationDate:", data.Comp7S20211123.Settings.Index.CreationDate)
 	fmt.Println("Comp7S20211123 CreationDate:", data.Comp7S20211123.Settings.Index.CreationDate)
 
 }
